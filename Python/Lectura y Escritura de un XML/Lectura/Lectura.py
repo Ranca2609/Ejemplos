@@ -1,6 +1,9 @@
 from xml.etree import ElementTree as ET 
 from  Constructor import Empleado
 
+
+#----------Lectura de un XML----------------
+
 tree = ET.parse('Archivo.xml')
 root = tree.getroot()
 Array = []
@@ -31,7 +34,10 @@ Username: JP
 Password:ejemplo123@
 '''
         
-            
+#----------Escritura de un XML---------------
+# Se utiliza la libreria Minidoom para la escritura de un xml
+
+   
         
     
 

@@ -1,0 +1,39 @@
+package Analizador;
+import java_cup.runtime.*;
+
+
+parser code
+{:
+    public String salida = "";
+    public String getSalida(){
+        return salida;
+    }
+    public void syntax_error(Symbol s){
+        System.out.println("Error Sintactico en la Linea " + (s.left)+". " +
+        " Columna" +s.right+ ". No se esperaba este componente: " +s.value+".");
+    }
+    public void unrecovered_syntax_error(Symbol s) throws java.lang.Exception{
+    System.out.println("Error sintactico irrecuperable en la linea " + 
+    (s.left)+ " Columna "+s.right+". Componente " + s.value +
+    " no reconocido.");
+}
+:}
+
+terminal String ptcoma,parizq,parder, mas,menos, por, dividido, id, entero, decimal, cadena, iff,llavea,llavec,igual,corchetea,corchetec,dospuntos,coma, elsee,mayorque, menorque,igualar,noigual,menorigualque,mayorigualque,annd,oor, noot, elevado, modulo, print, str, intt;
+
+
+non terminal String INICIO, PRINT, TIPODATO;
+
+start with INICIO;
+
+INICIO::= print parizq cadena parder;
+
+
+
+
+
+
+
+
+
+
