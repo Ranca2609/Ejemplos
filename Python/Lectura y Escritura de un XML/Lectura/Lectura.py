@@ -63,5 +63,22 @@ Salida = open('C:/Users/Carlos Rangel/Documents/GitHub/Ejemplos/Python/Lectura y
 Salida.write(xml)
 Salida.close()
 
+
+'''
+    XML de Salida
+<?xml version="1.0" encoding="utf-8"?>
+<empresa>
+	<empleado id="1">
+		<nombre>Angel Daniel</nombre>
+		<username>AD</username>
+		<password>123456</password>
+	</empleado>
+	<empleado id="2">
+		<nombre>Jose Pimentel</nombre>
+		<username>JP</username>
+		<password>ejemplo123@</password>
+	</empleado>
+</empresa>   
+'''
     
     
