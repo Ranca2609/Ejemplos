@@ -1,0 +1,5 @@
+exec -path=/home/Desktop/calificacion.script
+
+mkdisk
+
+rep
